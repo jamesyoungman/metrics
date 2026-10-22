@@ -1540,7 +1540,7 @@ runs:
 
         # Source repository (picked from action name)
         #METRICS_SOURCE=$(echo $METRICS_ACTION | sed -E 's/metrics.*?$//g' | sed -E 's/_//g')
-	METRICS_SOURCE='lowlighter'
+        METRICS_SOURCE='lowlighter'
         echo "Action: $METRICS_ACTION"
         echo "Source: $METRICS_SOURCE"
 
