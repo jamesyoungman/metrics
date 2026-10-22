@@ -1548,8 +1548,9 @@ runs:
         METRICS_VERSION=$(grep -Po '(?<="version": ").*(?=")' package.json)
         echo "Version: $METRICS_VERSION"
 
-        echo '$0' is "$0 - its contents are:"
+        echo "this script is $0 and its contents are:"
         nl -ba < "$0" 
+        set -x
 
         # Image tag (extracted from version or from env)
         METRICS_TAG=v$(echo $METRICS_VERSION | sed -r 's/^([0-9]+[.][0-9]+).*/\1/')
