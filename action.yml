@@ -1585,6 +1585,7 @@ runs:
         echo "Image name: $METRICS_IMAGE"
 
         # Build image if necessary
+        echo "Building the docker image if necessary"
         set +e
         docker image inspect $METRICS_IMAGE
         METRICS_IMAGE_NEEDS_BUILD="$?"
