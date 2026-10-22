@@ -1583,7 +1583,7 @@ runs:
           fi
         # Forked action
         else
-          echo "Using a forked version (source is {$METRICS_SOURCE})""
+          echo "Using a forked version (source is {$METRICS_SOURCE})"
           METRICS_IMAGE=metrics:forked-$METRICS_VERSION
         fi
         echo "Image name: $METRICS_IMAGE"
